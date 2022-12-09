@@ -3,7 +3,7 @@
 
 import math # импортируем каталог math
 import numpy # +numpy
-import matplotlib.pyplot as mpp # +что-то?!♥))
+import matplotlib.pyplot as mpp # библиотека, которая рисует графики
 
 # Эта программа рисует график функции, заданной выражением ниже
 
@@ -11,6 +11,6 @@ if __name__=='__main__': # запускаем условный оператор 
     arguments = numpy.arange(0, 200, 0.1) # процедура создания массива
     mpp.plot(
         arguments,
-        [math.sin(a) * math.sin(a/20.0) for a in arguments] # что-то похожее на генератор
+        [math.sin(a) * math.sin(a/20.0) for a in arguments] # строит график по тригонометрической функции
     )
-    mpp.show()
+    mpp.show() # показывает график
